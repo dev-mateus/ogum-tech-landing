@@ -3,23 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ogum Tech - Sistema moderno de gerenciamento de giras e filas de atendimento para terreiros de Umbanda">
-    <meta name="keywords" content="umbanda, giras, gestão, fila de atendimento, terreiro">
+    <meta name="description" content="Ogum Tech - Sistema moderno, gratuito e open source de gerenciamento de giras e filas de atendimento para terreiros de Umbanda. Seguro, responsivo e acessível.">
+    <meta name="keywords" content="ogum tech, umbanda, giras, gestão terreiro, fila atendimento, sistema gratuito, open source, médiuns, caboclo, preto velho">
     <meta name="author" content="Mateus">
+    <meta name="theme-color" content="#000000">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://dev-mateus.github.io/ogum-tech-landing/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dev-mateus.github.io/ogum-tech-landing/">
-    <meta property="og:title" content="Ogum Tech - Gestão de Giras de Umbanda">
-    <meta property="og:description" content="Sistema moderno de gerenciamento de giras e filas de atendimento para terreiros de Umbanda">
+    <meta property="og:title" content="Ogum Tech - Sistema de Gestão de Giras de Umbanda">
+    <meta property="og:description" content="Sistema moderno, gratuito e open source para gerenciamento de giras e filas de atendimento em terreiros de Umbanda. Seguro, responsivo e acessível.">
+    <meta property="og:site_name" content="Ogum Tech">
+    <meta property="og:locale" content="pt_BR">
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Ogum Tech - Gestão de Giras de Umbanda">
-    <meta property="twitter:description" content="Sistema moderno de gerenciamento de giras e filas de atendimento para terreiros de Umbanda">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ogum Tech - Sistema de Gestão de Giras de Umbanda">
+    <meta name="twitter:description" content="Sistema moderno, gratuito e open source para gerenciamento de giras e filas de atendimento em terreiros de Umbanda.">
+    <meta name="twitter:creator" content="@dev_mateus">
     
-    <title>Ogum Tech - Gestão de Giras de Umbanda</title>
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://ogum-tech.vercel.app">
+    <link rel="dns-prefetch" href="https://github.com">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    
+    <title>Ogum Tech - Sistema de Gestão de Giras de Umbanda | Gratuito e Open Source</title>
+    
+    <!-- Critical CSS inline for better performance -->
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;line-height:1.6;color:#000;background-color:#fff}.nav{position:fixed;top:0;left:0;right:0;background-color:#fff;border-bottom:2px solid #000;z-index:1000}.hero{background-color:#000;color:#fff;min-height:100vh}
+    </style>
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Ogum Tech",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      },
+      "description": "Sistema moderno de gerenciamento de giras e filas de atendimento para terreiros de Umbanda",
+      "url": "https://dev-mateus.github.io/ogum-tech-landing/",
+      "author": {
+        "@type": "Person",
+        "name": "Mateus"
+      },
+      "softwareVersion": "1.0.0",
+      "license": "https://opensource.org/licenses/MIT"
+    }
+    </script>
 </head>
 <body>
     <!-- Header / Hero -->
@@ -31,13 +74,13 @@
                         <div class="logo-box">OT</div>
                         <span class="logo-text">OGUM TECH</span>
                     </div>
-                    <div class="nav-links">
+                    <nav class="nav-links" id="nav-menu" aria-label="Navegação principal">
                         <a href="#sobre" class="nav-link">SOBRE</a>
                         <a href="#funcionalidades" class="nav-link">FUNCIONALIDADES</a>
                         <a href="#download" class="nav-link">DOWNLOAD</a>
-                        <a href="https://github.com/dev-mateus/ogum-tech" target="_blank" class="nav-link">GITHUB</a>
-                    </div>
-                    <button class="mobile-menu-btn" aria-label="Menu">
+                        <a href="https://github.com/dev-mateus/ogum-tech" target="_blank" rel="noopener noreferrer" class="nav-link" aria-label="Ver projeto no GitHub (abre em nova aba)">GITHUB</a>
+                    </nav>
+                    <button class="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-menu">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -316,6 +359,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
